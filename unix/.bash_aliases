@@ -1,3 +1,9 @@
+# Notes
+# ---------
+# Some of these aliases require a symlink to subl. Check
+# http://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
+# for more info.
+
 alias bash:profile="sudo sublime ~/.bash_profile"
 alias bash:reload="source ~/.bash_profile"
 
@@ -13,8 +19,6 @@ alias routes="php artisan routes"
 # Directories
 # --------------
 alias ll="ls -lah" # List all, with human readable filesizes
-alias dev="cd ~/Development/Personal"
-alias bs="cd ~/Development/Professional/Beatswitch"
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -22,7 +26,6 @@ alias .....="cd ../../../.."
 
 # Vagrant
 # ----------
-alias bs:up="cd ~/Development/Professional/Beatswitch/web-app; vagrant up; vagrant ssh"
 alias v="vagrant version && vagrant global-status"
 alias vst="vagrant status"
 alias vup="vagrant up"
