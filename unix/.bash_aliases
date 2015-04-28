@@ -24,6 +24,10 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 
+# General
+# ---------
+alias c="clear"
+
 # Vagrant
 # ----------
 alias v="vagrant version && vagrant global-status"
