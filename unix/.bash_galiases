@@ -2,13 +2,14 @@
 # -----------
 RED='\033[0;31m'
 GREEN='\033[0;32m'
+NC='\033[0m'
 
 # Update aliases
 # ----------------
 function galias() {
     if [[ $@ == "update" ]]; then
-        sudo curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o /.bash_galiases
-        printf "${GREEN}Your global aliases have been updated.\n";
+        sudo curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o ~/.bash_galiases
+        printf "${GREEN}Your global aliases have been updated.\n${NC}";
     fi
 }
 
