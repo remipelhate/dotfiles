@@ -1,3 +1,17 @@
+# Variables
+# -----------
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+
+# Update aliases
+# ----------------
+function galias() {
+    if [[ $@ == "update" ]]; then
+        curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o /.bash_galiases
+        printf "${GREEN}Your global aliases have been updated.";
+    fi
+}
+
 # Notes
 # ---------
 # Some of these aliases require a symlink to subl. Check

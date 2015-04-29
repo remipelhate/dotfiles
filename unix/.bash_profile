@@ -22,6 +22,8 @@ function bs() {
     fi
 }
 
-# Global
-# ---------
-curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_aliases -o /tmp/.bash_aliases; source /tmp/.bash_aliases
+# Load aliases
+# --------------
+if [ -f ~/.bash_galiases ]; then
+    . ~/.bash_galiases
+fi
