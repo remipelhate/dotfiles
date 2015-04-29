@@ -4,20 +4,34 @@
 # http://ashleynolan.co.uk/blog/launching-sublime-from-the-terminal
 # for more info.
 
-alias bash:profile="sudo sublime ~/.bash_profile"
-alias bash:reload="source ~/.bash_profile"
+alias bp="sudo sublime ~/.bash_profile"
+alias br="source ~/.bash_profile"
 
 # Artisan
-# ----------
-alias artisan="php artisan"
-alias artisan:refresh="composer dump; php artisan clear-compiled; php artisan optimize"
-alias migrate="php artisan migrate"
-alias migrate:refresh="php artisan migrate:refresh --seed"
+# ---------
 alias seed="php artisan db:seed"
 alias routes="php artisan routes"
 
+function artisan() {
+    if [[ $@ == "refresh" ]]; then
+        command composer dump
+        command php artisan clear-compiled
+        command php artisan optimize
+    else
+        command php artisan "$@"
+    fi
+}
+
+function migrate() {
+    if [[ $@ == "refresh" ]]; then
+        command php artisan migrate:refresh --seed
+    else
+        command php artisan migrate"$@"
+    fi
+}
+
 # Directories
-# --------------
+# -------------
 alias ll="ls -lah" # List all, with human readable filesizes
 alias ..="cd .."
 alias ...="cd ../.."
@@ -29,7 +43,7 @@ alias .....="cd ../../../.."
 alias c="clear"
 
 # Vagrant
-# ----------
+# ---------
 alias v="vagrant version && vagrant global-status"
 alias vst="vagrant status"
 alias vup="vagrant up"
