@@ -9,7 +9,8 @@ NC='\033[0m'
 function galias() {
     if [[ $@ == "update" ]]; then
         sudo curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o ~/.bash_galiases
-        printf "${GREEN}Your global aliases have been updated.\n${NC}";
+        printf "${GREEN}Your global aliases have been updated.\n${NC}"
+        command source ~/.bash_profile
     fi
 }
 
