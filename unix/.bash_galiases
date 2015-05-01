@@ -11,8 +11,9 @@ function galias() {
     if [[ $@ == "update" ]]; then
         printf "${BLUE}Pulling changes from the global aliases file...${RC}\n"
         sudo curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o ~/.bash_galiases
-        printf "${GREEN}Your global aliases have been updated.${RC}\n"
-        brel
+        printf "${BLUE}Reloading bash rc and profile...${RC}\n"
+        source ~/.bashrc
+        source ~/.bash_profile
     fi
 }
 
@@ -26,8 +27,9 @@ alias bp="edit ~/.bash_profile"
 alias brc="edit ~/.bash_profile"
 
 function brel() {
-    printf "${BLUE}Reloading bash profile...${RC}\n"
-    source ~/.bash_profile 
+    printf "${BLUE}Reloading bash rc and profile...${RC}\n"
+    source ~/.bashrc
+    source ~/.bash_profile
 }
 
 
@@ -56,9 +58,9 @@ function migrate() {
 
 # Directories
 # -------------
-# alias ls="ls --color=auto"
-alias lsl="ls --color=auto -l"
-alias lal="ls --color -lah" # List all, with human readable filesizes
+alias ls="ls -G"
+alias lsl="ls -Gl"
+alias lal="ls -Glah" # List all, with human readable filesizes
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
