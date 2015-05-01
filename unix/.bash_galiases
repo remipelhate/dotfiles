@@ -9,6 +9,7 @@ RC='\e[0m'
 # ----------------
 function galias() {
     if [[ $@ == "update" ]]; then
+        printf "${BLUE}Pulling changes from the global aliases file...${RC}\n"
         sudo curl https://raw.githubusercontent.com/remipelhate/dotfiles/master/unix/.bash_galiases -o ~/.bash_galiases
         printf "${GREEN}Your global aliases have been updated.${RC}\n"
         brel
@@ -22,7 +23,7 @@ function galias() {
 # for more info.
 
 alias bp="edit ~/.bash_profile"
-alias brc="edit ~/.bashrc"
+alias brc="edit ~/.bash_profile"
 
 function brel() {
     printf "${BLUE}Reloading bash profile...${RC}\n"
