@@ -56,7 +56,7 @@ function migrate() {
 
 # Directories
 # -------------
-alias ls="ls --color=auto"
+# alias ls="ls --color=auto"
 alias lsl="ls --color=auto -l"
 alias lal="ls --color -lah" # List all, with human readable filesizes
 alias ..="cd .."
