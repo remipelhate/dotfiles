@@ -35,6 +35,8 @@ function lum() {
 		fi
 	elif [[ $1 == "down" ]]; then
 		command homestead halt
+	elif [[ $1 == "edit" ]]; then
+		command homestead edit
 	else
 		cd $LUM_DIR
 	fi
