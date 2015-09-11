@@ -14,7 +14,7 @@ function bs() {
     if [[ $@ == "up" ]]; then
         cd $BS_DIR/web-app
         command vagrant up
-        command vagrant ssh -- -t 'cd /vagrant; /bin/bash'
+        command vagrant ssh -- -t 'cd /var/www/html/promoter; /bin/bash'
     elif [[ $@ == "down" ]]; then
     	command vagrant halt
     else
