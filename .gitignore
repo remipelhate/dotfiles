@@ -1,1 +1,17 @@
-.idea/*
+# Folder view configuration files
+.DS_Store
+.DS_Store?
+
+# Thumbnail cache files
+._*
+Thumbs.db
+ehthumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# Development
+.idea/
+.vagrant/
+npm-debug.log
