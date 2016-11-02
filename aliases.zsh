@@ -34,6 +34,7 @@ alias vup="vagrant up"
 alias vdo="vagrant halt"
 alias vssh="vagrant ssh"
 alias vkill="vagrant destroy"
+alias vboot="vagrant up && vagrant ssh"
 alias vrebuild="vagrant destroy --force && vagrant up"
 
 # Virtual Hosts
