@@ -24,6 +24,9 @@ function fireSetupProcedure() {
 
     # Install global Composer packages
     /usr/local/bin/composer global require laravel/installer laravel/lumen-installer
+
+    # Install global NPM packages
+    yarn global add vue-cli
 }
 
 # Prevent the setup procedure from being fired accidentally.
