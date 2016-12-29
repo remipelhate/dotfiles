@@ -3,6 +3,6 @@
 case $@ in
     "play") # Navigate to the Playground dev directory
         cd $DEV/Playground ;;
-    *) # Navigate to the root dev directory
-        cd $DEV
+    *) # Navigate to given directory (or root directory if no path was given)
+        cd $DEV/$@
 esac

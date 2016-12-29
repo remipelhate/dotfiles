@@ -1,4 +1,5 @@
 export PATH=~/.composer/vendor/bin:$PATH
+export PATH="$PATH:`yarn global bin`"
 
 # Load custom commands (executables)
 export PATH="$DOTFILES/bin:$PATH"

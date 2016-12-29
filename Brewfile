@@ -26,6 +26,7 @@ brew 'awscli'
 brew 'git'
 brew 'node'
 brew 'wget'
+brew 'yarn'
 
 # Development
 brew 'php70', args: ['with-debug', 'without-apache']
