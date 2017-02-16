@@ -4,7 +4,7 @@ case $@ in
     "up") # Fire up the web-app Vagrant box
         cd $BS/web-app
         command vagrant up
-        command vagrant ssh -- -t 'cd /var/www/html/promoter/current; /bin/bash' ;;
+        command vagrant ssh -- -t 'cd /var/www/development.promoter/current; /bin/bash' ;;
     "down") # Halt the web-app Vagrant box
         command vagrant halt ;;
     "app") # Navigate to the BeatSwitch App directory
