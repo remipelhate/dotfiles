@@ -15,3 +15,4 @@ ehthumbs.db
 .idea/
 .vagrant/
 npm-debug.log
+yarn-error.log

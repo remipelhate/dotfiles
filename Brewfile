@@ -23,6 +23,8 @@ brew 'homebrew/dupes/grep'
 
 # Install Binaries
 brew 'awscli'
+brew 'ffmpeg'
+brew 'gifsicle'
 brew 'git'
 brew 'node'
 brew 'wget'
@@ -54,6 +56,7 @@ cask 'tower'
 cask 'vagrant'
 cask 'virtualbox'
 cask 'virtualbox-extension-pack'
+cask 'x-quartz'
 
 # Quicklook
 cask 'qlcolorcode'

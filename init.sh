@@ -10,3 +10,6 @@ cp -i templates/.zprofile ~
 
 # Make ZSH the default shell environment
 chsh -s $(which zsh)
+
+# Copy .gitignore from the dotfiles installation to the uses home directory.
+cp -i .gitignore ~
