@@ -1,5 +1,6 @@
 # Taps
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/dupes'
@@ -33,6 +34,9 @@ brew 'yarn'
 # Development
 brew 'php70', args: ['with-debug', 'without-apache']
 brew 'httpie'
+cask 'vagrant'
+cask 'virtualbox'
+cask 'virtualbox-extension-pack'
 
 # Apps
 cask 'adapter'
@@ -47,16 +51,17 @@ cask 'imageoptim'
 cask 'jetbrains-toolbox'
 cask 'mysqlworkbench'
 cask 'postman'
+cask 'quip'
 cask 'sequel-pro'
 cask 'skype'
 cask 'slack'
 cask 'sublime-text'
 cask 'teamviewer'
 cask 'tower'
-cask 'vagrant'
-cask 'virtualbox'
-cask 'virtualbox-extension-pack'
 cask 'x-quartz'
+
+# Fonts
+cask 'font-fira-code'
 
 # Quicklook
 cask 'qlcolorcode'

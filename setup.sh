@@ -15,9 +15,6 @@ function fireSetupProcedure() {
     brew tap homebrew/bundle
     brew bundle
 
-    # Make ZSH the default shell environment
-    chsh -s $(which zsh)
-
     # Install Composer
     curl -sS https://getcomposer.org/installer | php
     mv composer.phar /usr/local/bin/composer
@@ -27,6 +24,15 @@ function fireSetupProcedure() {
 
     # Install global NPM packages
     yarn global add vue-cli
+
+    # Install OhMyZsh
+    curl -L https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh | sh
+
+    # Make ZSH the default shell environment
+    chsh -s $(which zsh)
+
+    # Last but not least, let's init!
+    bash init.sh
 }
 
 # Prevent the setup procedure from being fired accidentally.
