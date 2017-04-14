@@ -7,8 +7,6 @@ case $@ in
         command vagrant ssh -- -t 'cd /var/www/development.promoter/current; /bin/bash' ;;
     "down") # Halt the web-app Vagrant box
         command vagrant halt ;;
-    "app") # Navigate to the BeatSwitch App directory
-        cd $BS/web-app ;;
-    *) # Navigate to the BeatSwitch dev directory
-        cd $BS
+    *) # Navigate to the BeatSwitch dev directory or any specified sub directory
+        cd $BS/$@
 esac
