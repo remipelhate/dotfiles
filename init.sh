@@ -2,11 +2,12 @@
 
 echo "Initializing your Mac..."
 
-# Copy the .zshrc from the dotfiles installation to the users home directory.
 cp -i templates/.zshrc ~
-
-# Copy .gitignore from the dotfiles installation to the uses home directory.
 cp -i .gitignore ~
+
+# Remove the “Last login” Message (MOTD) from the Terminal
+# @see http://osxdaily.com/2010/06/22/remove-the-last-login-message-from-the-terminal/
+touch ~/.hushlogin
 
 # Point to the global gitignore
 git config --global core.excludesfile '~/.gitignore'
