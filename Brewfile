@@ -32,7 +32,7 @@ brew 'wget'
 brew 'yarn'
 
 # Development
-brew 'php70', args: ['with-debug', 'without-apache']
+brew 'php71', args: ['with-debug', 'without-apache']
 brew 'httpie'
 cask 'vagrant'
 cask 'virtualbox'
