@@ -3,12 +3,12 @@
 # Whenever changing the Desktop Image didn't persist to the login screen, this script
 # offers a few commands to either flush the cached image or manually replace it.
 
-function flushCachedDesktopImage() {
+flushCachedDesktopImage() {
     sudo rm -rf /Library/Caches/com.apple.desktop.admin.png
     echo "The cached desktop image has been flushed!"
 }
 
-function replaceDefaultDesktopImage() {
+replaceDefaultDesktopImage() {
     sudo ln -sF $2 /System/Library/CoreServices/DefaultDesktop.jpg
     echo "The default desktop image has been replaced!"
 }
@@ -20,6 +20,3 @@ case $@ in
         replaceDefaultDesktopImage
         flushCachedDesktopImage
 esac
-
-unset flushCachedDesktopImage;
-unset replaceDefaultDesktopImage;

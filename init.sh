@@ -2,6 +2,9 @@
 
 echo "Initializing your Mac..."
 
+# Make ZSH the default shell environment
+chsh -s $(which zsh)
+
 cp -i templates/.zshrc ~
 cp -i .gitignore ~
 
