@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd $BEATSWITCH/crowdbase-web-app

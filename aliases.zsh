@@ -10,7 +10,8 @@ alias df="cd $DOTFILES"
 
 ## Prevent some custom executables from being ran in a subshell
 alias dev="source dev"
-alias bs="source bs"
+alias beatswitch="source beatswitch"
+alias crowdbase="source crowdbase"
 alias dimg="source dimg"
 
 # Listing -----------------------------------------------------------
