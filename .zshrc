@@ -8,7 +8,7 @@ export ZSH=$HOME/.oh-my-zsh
 export DEV=$HOME/Development
 export REM=$DEV/remipelhate
 export LUM=$DEV/luminol
-export BS=$DEV/beatswitch
+export BEATSWITCH=$DEV/beatswitch
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

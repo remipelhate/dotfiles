@@ -1,7 +1,7 @@
 #!/bin/sh
 
 bootAndLoginToBox() {
-    cd $BS/web-app
+    cd $BEATSWITCH/beatswitch-web-app
     command vagrant up
     command vagrant ssh -- -t 'cd /var/www/development.promoter/current; /bin/bash'
 }
@@ -11,7 +11,7 @@ shutdownBox() {
 }
 
 navigateToDirectory() {
-    cd $BS/$@
+    cd $BEATSWITCH/$@
 }
 
 case $@ in
