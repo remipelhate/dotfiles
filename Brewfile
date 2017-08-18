@@ -43,6 +43,7 @@ cask 'virtualbox-extension-pack'
 # Apps
 cask 'adapter'
 cask 'aerial'
+cask 'anaconda'
 cask 'archiver'
 cask 'dash'
 cask 'dropbox'
